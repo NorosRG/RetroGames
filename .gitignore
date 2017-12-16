@@ -1,4 +1,5 @@
 .DS_Store
+.idea/*
 .idea/modules.xml
 .idea/SheepDropping.iml
 .idea/vcs.xml

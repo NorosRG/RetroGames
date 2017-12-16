@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <magegiant_fullpagecache module="fullpagecache" translate="title">
+            <title>Cache</title>
+            <sort_order>71</sort_order>
+            <children>
+
+                <!--<fullpage_config translate="title">-->
+                    <!--<title>Manage Full page cache</title>-->
+                    <!--<action>adminhtml/cache_fullpage_config</action>-->
+                    <!--<sort_order>10</sort_order>-->
+                <!--</fullpage_config>-->
+
+                <!--<blockhtml_config translate="title">-->
+                    <!--<title>Manage Block cache</title>-->
+                    <!--<action>adminhtml/cache_blockhtml_config</action>-->
+                    <!--<sort_order>20</sort_order>-->
+                <!--</blockhtml_config>-->
+
+                <htaccess_config translate="title">
+                    <title>.htaccess config</title>
+                    <action>adminhtml/htaccess_config</action>
+                    <sort_order>30</sort_order>
+                </htaccess_config>
+
+
+                <settings module="fullpagecache" translate="title">
+                    <title>Configuration</title>
+                    <sort_order>1000</sort_order>
+                    <action>adminhtml/system_config/edit/section/magegiant_fullpagecache</action>
+                </settings>
+            </children>
+        </magegiant_fullpagecache>
+
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <magegiant_fullpagecache module="fullpagecache" translate="title">
+                                        <title>Full page cache</title>
+                                        <sort_order>71</sort_order>
+                                    </magegiant_fullpagecache>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+
+                    <magegiant_fullpagecache module="fullpagecache" translate="title">
+                        <title>Cache</title>
+                        <sort_order>71</sort_order>
+                        <children>
+
+                            <!--<fullpage_config translate="title">-->
+                                <!--<title>Manage Full page cache</title>-->
+                                <!--<action>adminhtml/cache_fullpage_config</action>-->
+                                <!--<sort_order>10</sort_order>-->
+                            <!--</fullpage_config>-->
+
+                            <!--<blockhtml_config translate="title">-->
+                                <!--<title>Manage Block cache</title>-->
+                                <!--<action>adminhtml/cache_blockhtml_config</action>-->
+                                <!--<sort_order>20</sort_order>-->
+                            <!--</blockhtml_config>-->
+
+                            <htaccess_config>
+                                <title>.htaccess configuration</title>
+                                <action>adminhtml/htaccess_config</action>
+                                <sort_order>30</sort_order>
+                            </htaccess_config>
+
+
+                            <settings module="fullpagecache" translate="title">
+                                <title>Configuration</title>
+                                <sort_order>1000</sort_order>
+                                <action>adminhtml/system_config/edit/section/magegiant_fullpagecache</action>
+                            </settings>
+                        </children>
+                    </magegiant_fullpagecache>
+
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

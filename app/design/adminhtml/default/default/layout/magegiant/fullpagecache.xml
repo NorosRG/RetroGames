@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="root">
+        	<block type="core/text_list" name="notifications_fullpagecache" as="notifications_fullpagecache">
+            	<block type="fullpagecache/adminhtml_notifications" name="fullpagecache_notifications" template="magegiant/fullpagecache/notifications.phtml"/>
+        	</block>
+        </reference>
+    </default>
+</layout>

@@ -1,3 +1,14 @@
+.DS_Store
+.idea/modules.xml
+.idea/SheepDropping.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/dbnavigator.xml
+.idea/php.xml
+.idea/symfony2.xml
+.idea/codeStyles/Project.xml
+.idea/inspectionProfiles/profiles_settings.xml
+
 #--------------------------#
 # Magento Default Files    #
 #--------------------------#

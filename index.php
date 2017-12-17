@@ -80,4 +80,6 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 /* Run store or run website */
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
+(file_exists(BP . DS . 'app' . DS . 'code' . DS . 'local' . DS . 'Magegiant' . DS . 'Fullpagecache' . DS . 'Main.php')) ? Magegiant_Fullpagecache_Main::init()->renderPage() : false;
+
 Mage::run($mageRunCode, $mageRunType);

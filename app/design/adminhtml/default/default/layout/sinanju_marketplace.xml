@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Layout for Sinanju Marketplace Module
+ *
+ * @category    design
+ * @package     base_default
+ * @author      Ronan <ronan.girault@sinanju.fr>
+ * @copyright   Copyright (c) 2017 Sinanju
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @contributor Ronan <ronan.girault@sinanju.fr>,
+ */
+-->
+<layout version="0.1.0">
+
+    <adminhtml_catalog_product_edit>
+        <reference name="product_tabs">
+            <action method="addTab">
+                <name>marketplace</name>
+                <block>sinanju_marketplace/adminhtml_catalog_product_edit_tab_marketplace</block>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_edit>
+
+</layout>
